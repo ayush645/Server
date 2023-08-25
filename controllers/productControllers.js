@@ -67,7 +67,7 @@ const createProduct = asyncHandler(async (req, res) => {
 		brand: 'AKT',
 		category: 'Fund',
 		numReviews: 0,
-		countInStock: 0,
+		countInStock: 1000,
 		price: 0,
 		user: req.user._id,
 		description: 'Profit: ₹200 | Total:₹200 ',
