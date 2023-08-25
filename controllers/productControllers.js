@@ -63,14 +63,14 @@ const deleteProduct = asyncHandler(async (req, res) => {
 const createProduct = asyncHandler(async (req, res) => {
 	// create a dummy product which can be edited later
 	const product = new Product({
-		name: 'Sample',
-		brand: 'Sample Brand',
-		category: 'Sample Category',
+		name: '15 Days Plan',
+		brand: 'AKT',
+		category: 'Fund',
 		numReviews: 0,
 		countInStock: 0,
 		price: 0,
 		user: req.user._id,
-		description: 'Sample description',
+		description: 'Profit: ₹200 | Total:₹200 ',
 	});
 	const createdProduct = await product.save();
 	res.status(201).json(createdProduct);
